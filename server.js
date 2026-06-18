@@ -137,7 +137,7 @@ app.post('/api/generate-video', async (req, res) => {
 // ==========================================
 // INICIALIZAÇÃO DO SERVIDOR
 // ==========================================
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
   console.log(`\n==================================================`);
   console.log(`  Servidor backend iniciado com sucesso na porta ${PORT}!`);
